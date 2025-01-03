@@ -34,11 +34,11 @@ public class Alfabeto extends Pictograma {
     public String toString() {
         int c=1;
         String n=null;
-        while (c!=letras.length){
+        while (c!=(letras.length-1)){
             n+=letras[c-1]+", ";
             c+=1;
         }if(c==letras.length){
-            n+=letras[c];
+            n+=letras[c-1];
             c+=1;
         }
         return n;
